@@ -31,7 +31,6 @@ Clear all the network.
 * Subnet Mask: `255.255.255.0`
 * DHCP: **Untick** this `Use (local DHCP service to distribute IP addresses)`
 
----
 
 ## Attacker Machine
 
@@ -43,7 +42,6 @@ Also Set this network: `Custom/VMnet2`
 sudo dhclient eth1
 ```
 
----
 
 ## Linux Pivot
 
@@ -53,7 +51,6 @@ Set two VM adapters:
 * First network: `Custom/VMnet2`
 * Second network: `Custom/VMnet3`
 
----
 
 ## Windows Pivot
 
@@ -63,13 +60,11 @@ Set two VM adapters:
 * First network: `Custom/VMnet2`
 * Second Network: `Custom/VMnet3`
 
----
 
 ## Linux Target
 
 Set the network: `Custom/VMnet3`
 
----
 
 ## Windows Target
 
