@@ -1,7 +1,82 @@
 # Pivoting-Lab
 
-Windows Link --->   https://ubuntu.com/download/server <br>
-Ubuntu Link  --->   https://www.microsoft.com/en-us/evalcenter/evaluate-windows-11-enterprise
+# Setup 
+# VMware
+
+## Virtual Network Editor
+
+On the top:
+
+* Press **Edit**
+* Press **Virtual Network Editor**
+
+Clear all the network.
+
+### Add Network — VMnet0
+
+* Add Network: `vmnet0`
+* Connect to bridge
+
+### Add Network — VMnet2
+
+* Network: `VMnet2`
+* Type: `Host-only`
+* Subnet IP: `10.10.10.0`
+* Subnet Mask: `255.255.255.0`
+* DHCP: **UNtick** this `Use (local DHCP service to distribute IP addresses)`
+
+### Add Network — VMnet3
+
+* Network: `VMnet3`
+* Type: `Host-only`
+* Subnet IP: `10.20.20.0`
+* Subnet Mask: `255.255.255.0`
+* DHCP: **Untick** this `Use (local DHCP service to distribute IP addresses)`
+
+---
+
+## Attacker Machine
+
+Set this network: `NAT`
+
+Also Set this network: `Custom/VMnet2`
+
+```bash
+sudo dhclient eth1
+```
+
+---
+
+## Linux Pivot
+
+Set two VM adapters:
+
+* Press **Add Network**
+* First network: `Custom/VMnet2`
+* Second network: `Custom/VMnet3`
+
+---
+
+## Windows Pivot
+
+Set two VM adapters:
+
+* Press **Add Network**
+* First network: `Custom/VMnet2`
+* Second Network: `Custom/VMnet3`
+
+---
+
+## Linux Target
+
+Set the network: `Custom/VMnet3`
+
+---
+
+## Windows Target
+
+Set the network: `Custom/VMnet3`
+
 
 # Credentials
 
