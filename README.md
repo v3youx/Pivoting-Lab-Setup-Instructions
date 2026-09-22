@@ -1,9 +1,7 @@
 # Pivoting-Lab
 
-# Setup 
-# VMware
 
-## Virtual Network Editor
+# Setup 
 
 On the top:
 
