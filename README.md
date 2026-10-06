@@ -73,14 +73,7 @@ Set the network: `Custom/VMnet3`
 Set the network: `Custom/VMnet3`
 
 
-# Credentials
 
-| Username | Password |
-|----------|----------|
-| windows-pivot | windows-pivot |
-| windows-target | windows-target |
-| linux-pivot | linux-pivot |
-| linux-target | linux-target |
 
 # Archiecture
 <img width="900" height="500" alt="archietecture" src="https://github.com/user-attachments/assets/7b498728-e7db-4981-b267-ed5aba2ae512" />
