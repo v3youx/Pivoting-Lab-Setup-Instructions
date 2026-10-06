@@ -3,7 +3,7 @@
 Step-by-step instructions for configuring Windows and Linux Pivot–Target machines in an isolated VMware lab environment, including the required network interfaces, services, and connectivity settings.
 
 
-# Setup 
+# Setup
 
 On the top:
 
